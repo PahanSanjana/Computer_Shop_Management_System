@@ -51,10 +51,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pnlCenter = new System.Windows.Forms.Panel();
-            this.userControlBrand1 = new Computer_Shop_Management_System.PAL.UserControlBrand();
-            this.userControlDashbord1 = new Computer_Shop_Management_System.PAL.UserControlDashbord();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
             this.guna2MouseStateHandler1 = new Guna.UI2.WinForms.Guna2MouseStateHandler(this.components);
+            this.userControlCategory1 = new Computer_Shop_Management_System.PAL.UserControlCategory();
+            this.userControlBrand1 = new Computer_Shop_Management_System.PAL.UserControlBrand();
+            this.userControlDashbord1 = new Computer_Shop_Management_System.PAL.UserControlDashbord();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -328,6 +329,7 @@
             // 
             // pnlCenter
             // 
+            this.pnlCenter.Controls.Add(this.userControlCategory1);
             this.pnlCenter.Controls.Add(this.userControlBrand1);
             this.pnlCenter.Controls.Add(this.userControlDashbord1);
             this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -336,8 +338,23 @@
             this.pnlCenter.Size = new System.Drawing.Size(747, 464);
             this.pnlCenter.TabIndex = 0;
             // 
+            // timerDateAndTime
+            // 
+            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
+            // 
+            // userControlCategory1
+            // 
+            this.userControlCategory1.BackColor = System.Drawing.Color.White;
+            this.userControlCategory1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlCategory1.Location = new System.Drawing.Point(0, 0);
+            this.userControlCategory1.Name = "userControlCategory1";
+            this.userControlCategory1.Size = new System.Drawing.Size(747, 464);
+            this.userControlCategory1.TabIndex = 0;
+            this.userControlCategory1.Visible = false;
+            // 
             // userControlBrand1
             // 
+            this.userControlBrand1.AutoScroll = true;
             this.userControlBrand1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.userControlBrand1.BackColor = System.Drawing.Color.White;
             this.userControlBrand1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -355,10 +372,6 @@
             this.userControlDashbord1.Name = "userControlDashbord1";
             this.userControlDashbord1.Size = new System.Drawing.Size(747, 464);
             this.userControlDashbord1.TabIndex = 0;
-            // 
-            // timerDateAndTime
-            // 
-            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
             // 
             // FormMain
             // 
@@ -416,5 +429,6 @@
         private UserControlDashbord userControlDashbord1;
         private Guna.UI2.WinForms.Guna2MouseStateHandler guna2MouseStateHandler1;
         private UserControlBrand userControlBrand1;
+        private UserControlCategory userControlCategory1;
     }
 }

@@ -225,7 +225,8 @@
             this.dgvBrand.AllowUserToDeleteRows = false;
             this.dgvBrand.AllowUserToResizeColumns = false;
             this.dgvBrand.AllowUserToResizeRows = false;
-            this.dgvBrand.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvBrand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvBrand.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBrand.BackgroundColor = System.Drawing.Color.White;
             this.dgvBrand.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvBrand.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -275,7 +276,6 @@
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 208;
             // 
             // Column2
             // 
@@ -284,7 +284,6 @@
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 208;
             // 
             // Column3
             // 
@@ -293,7 +292,6 @@
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 208;
             // 
             // txtSearchBrandName
             // 
