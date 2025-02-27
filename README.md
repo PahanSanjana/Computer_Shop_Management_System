@@ -72,4 +72,4 @@ This project is open-source and free to use.
 
 ## Contact
 
-For any queries or contributions, feel free to reach out via [email/contact info].
+For any queries or contributions, feel free to reach out via [pahansanjana6226@gmail.com].
